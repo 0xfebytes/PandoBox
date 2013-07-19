@@ -1,0 +1,27 @@
+##############################################
+##############################################
+##        _              _		            ##
+##       | \            | \			        ##
+##       |_/ _  _  _| _ |_/ _			    ##
+##       |  / || \/ |/ \| \/ \\/			##
+##       |  \_|| |\_|\_/|_/\_//\			##
+##                                          ##
+##############################################
+##                                          ##
+## STATUS: Work in Progress                 ##
+##                                          ##
+##############################################
+##                                          ##
+## PandoraEncoded - A different take on the ##
+##  dedicated Pandora Pi radio.             ##
+##                                          ##
+##############################################
+##############################################
+
+There are several major components to this
+project.  Important components include:
+RPi with pianobar
+20x4 serial enabled lcd
+rotary encoder
+mseg7 ic spectrum analyzer
+arduino (atmel 328, arduino only for testing)

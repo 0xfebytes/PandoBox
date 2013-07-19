@@ -39,10 +39,6 @@ FILE *info;
 time_t menu_time, cur_time;
 int elapsed;
 
-// REMOVE; testing
-char buffer[sizeof(int)*8+1];
-uint8_t len = sizeof(buffer);
-
 // TO DO:
 // create parameters for information
 
@@ -180,12 +176,8 @@ int main(int argc, char* argv[]){
 // prints the menu with cursor
 void printMenu(uint8_t current_item){
 	clear(lcd);
-	// REMOVE; testing
 	setCursor(lcd, 1, 15);
-	if(snprintf(buffer, len, "%d", counter) == -1) {
-		serialPrintf(lcd,"ERROR");
-	}
-	serialPrintf(lcd, buffer);
+	serialPrintf(lcd, "%d", counter);
 	setCursor(lcd, 1, 0);
 	// first page
 	if (current_item < 5){

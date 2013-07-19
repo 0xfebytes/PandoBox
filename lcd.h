@@ -46,3 +46,4 @@ void putChar(int fd, char character);
 void changeBaud(int fd, uint32_t rate);
 void showBaud(int fd);
 void clearLine(int fd, uint8_t y);
+void write(int fd, char string[]);

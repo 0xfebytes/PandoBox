@@ -113,7 +113,7 @@ void shiftRight(int fd){
 	cmd(fd, SHIFTRIGHT);
 }
 
-/* removed, use serialPrintf(int fd, char *str)
+// for wiringpi: use serialPrintf(int fd, char *str)
 void write(int fd, char string[]){
 	int i = 0;
 	while (string[i] != '\0'){
@@ -121,7 +121,6 @@ void write(int fd, char string[]){
 		i++;
 	}
 }
-*/
 
 void putChar(int fd, char character){
 	serialPutchar(fd, character);
